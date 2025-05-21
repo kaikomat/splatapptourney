@@ -1,0 +1,45 @@
+.casters-wrapper {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.casters-wrapper > .casters {
+    background-color: var(--scoreboard-background);
+    text-align: center;
+    font-size: 30px;
+    border-radius: 12px;
+    color: var(--background-2-dark);
+    width: 300px;
+    padding: 1px 0;
+}
+
+.casters > .title {
+    font-weight: 600;
+    border-bottom: 4px solid var(--background-1-dark);
+    margin: 5px 10px;
+}
+
+.caster {
+    margin-bottom: 5px;
+}
+
+.caster > fitted-text.name {
+    font-weight: 600;
+}
+
+.caster > fitted-text.twitter {
+    font-size: 26px;
+}
+
+#caster-elements {
+    margin: 10px;
+}
+
+span.pronoun {
+    font-size: 20px;
+    background-color: var(--background-1-dark);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}

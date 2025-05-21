@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--suppress HtmlRequiredAltAttribute -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break@reef-rushdown-overlays</title>
+
+    <!--
+       Rock Salt
+       Raleway 500, 600, 700
+       Montserrat 700 (numbers)
+       Kosugi Maru (Japanese text)
+       Font Awesome
+   -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6346e13f8b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/break/break.css">
+    <link rel="stylesheet" href="styles/break/background.css">
+    <link rel="stylesheet" href="styles/break/main.css">
+    <link rel="stylesheet" href="styles/break/infoBar.css">
+    <link rel="stylesheet" href="styles/break/teams.css">
+    <link rel="stylesheet" href="styles/break/stages.css">
+</head>
+<body>
+<div class="logo-wrapper flex-align-center">
+    <div class="logo">
+        <img src="imgs/rrlogo.png">
+        <canvas id="logo-text-canvas" width="900" height="240"></canvas>
+    </div>
+</div>
+
+<div class="scene-wrapper flex-align-center">
+    <div class="scene main-scene flex-align-center">
+        <div class="main-container flex-align-center">
+            <fitted-text class="main-flavor-text" id="main-flavor-text" text="Welcome to Reef Rushdown!"
+                         max-width="1800"></fitted-text>
+            <div class="line"></div>
+            <div class="music-timer-wrapper flex-align-center">
+                <div class="music">
+                    <i class="fas fa-music"></i>
+                    <fitted-text id="song-text" text="Music" max-width="1700"></fitted-text>
+                </div>
+                <div class="line"></div>
+                <div class="timer">
+                    <i class="far fa-clock"></i>
+                    <div id="timer-text">Next round starts in <span id="mins-remaining">??? minutes...</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container flex-align-center">
+            <div class="main-container-title">Support us!</div>
+            <div class="line"></div>
+            <div class="support-row">
+                <i class="fab fa-twitter"></i>
+                <span>@IPLSplatoon</span>
+            </div>
+            <div class="support-row">
+                <i class="fab fa-discord"></i>
+                <span>IPLabs.ink/discord</span>
+            </div>
+            <div class="support-row">
+                <i class="fab fa-patreon"></i>
+                <span>patreon.com/IPLSplatoon</span>
+            </div>
+            <div class="support-row">
+                <i class="fas fa-globe"></i>
+                <span>IPLabs.ink</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scene-wrapper teams-scene flex-align-center">
+    <div class="scene-content">
+        <div class="team flex-align-center" id="team-a-wrapper">
+            <img class="team-decor-icon team-a-decor-icon" src="imgs/coral.svg">
+            <div class="background"></div>
+            <div class="content-wrapper flex-align-center">
+                <div class="content first-team-content">
+                    <fitted-text id="team-a-name" class="team-name" text="First Team!" max-width="445"></fitted-text>
+                    <div class="teams-line"></div>
+                    <div class="players" id="team-a-players">
+
+                    </div>
+                    <div class="team-image-wrapper flex-align-center">
+                        <div class="team-image" id="team-a-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="versus"></div>
+        <div class="team flex-align-center" id="team-b-wrapper">
+            <img class="team-decor-icon team-b-decor-icon" src="imgs/shell.svg">
+            <div class="background"></div>
+            <div class="content-wrapper flex-align-center">
+                <div class="content second-team-content">
+                    <fitted-text id="team-b-name" class="team-name" text="Second Team!" max-width="445"></fitted-text>
+                    <div class="teams-line"></div>
+                    <div class="players" id="team-b-players">
+
+                    </div>
+                    <div class="team-image-wrapper flex-align-center">
+                        <div class="team-image" id="team-b-image"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scene-wrapper stages-scene flex-align-center">
+    <div class="stages-scoreboard">
+        <fitted-text id="team-a-name-scoreboard" max-width="400" text=""></fitted-text>
+        <div class="scores">
+            <fitted-text id="team-a-score-scoreboard" max-width="50" text="0"></fitted-text>
+            <div></div>
+            <fitted-text id="team-b-score-scoreboard" max-width="50" text="0"></fitted-text>
+        </div>
+        <fitted-text id="team-b-name-scoreboard" max-width="400" text=""></fitted-text>
+    </div>
+    <div class="stages-grid" id="stages-grid">
+
+    </div>
+</div>
+
+<div class="info-bar-wrapper flex-align-center">
+    <div class="info-bar flex-align-center">
+        <div class="info-row info-row-welcome flex-align-center">
+            Welcome to<span class="small-logo"><img src="imgs/rrlogo.png"></span><span
+                class="rr-logo-font">Reef Rushdown!</span>
+        </div>
+        <div class="info-row info-row-commentators flex-align-center">
+            <div class="commentators flex-align-center">
+                <i class="fas fa-microphone-alt"></i>&nbsp;<fitted-text id="info-row-casters-text" use-inner-html
+                                                                        text="Casters" max-width="1300"></fitted-text>
+            </div>
+            <div class="commentators flex-align-center">
+                <i class="fab fa-twitter"></i>&nbsp;<fitted-text id="info-row-casters-twitter-text" use-inner-html
+                                                                 text="Casters" max-width="1300"></fitted-text>
+            </div>
+        </div>
+        <div class="info-row info-row-music flex-align-center">
+            <i class="fas fa-music" id="info-row-music-icon"></i>&nbsp;<fitted-text id="info-row-music-text"
+                                                                                    text="Music"
+                                                                                    max-width="1300"></fitted-text>
+        </div>
+    </div>
+</div>
+
+<div class="background-wrapper coral-wrapper"></div>
+
+<div class="background-wrapper wave-wrapper">
+    <svg class="wave-svg" viewBox="0 -600 1920 2160">
+        <path id="wave-path" d=""></path>
+    </svg>
+</div>
+
+<div class="background-wrapper bottom-coral-wrapper">
+    <canvas id="bottom-coral-canvas"></canvas>
+</div>
+
+<script src="../node_modules/lodash/lodash.min.js"></script>
+<script src="../node_modules/fitted-text/dist/fitted-text.js"></script>
+<script src="../node_modules/gsap/dist/gsap.js"></script>
+<script src="../node_modules/wavify/wavify.js"></script>
+<script src="../node_modules/luxon/build/global/luxon.js"></script>
+<script src="../node_modules/pixi.js/dist/browser/pixi.min.js"></script>
+
+<script src="scripts/globals.js"></script>
+<script src="scripts/replicants.js"></script>
+
+<script src="scripts/break/main.js"></script>
+<script src="scripts/break/backgroundAnimation.js"></script>
+<script src="scripts/break/music.js"></script>
+<script src="scripts/break/mainFlavorText.js"></script>
+<script src="scripts/break/nextStageTimer.js"></script>
+<script src="scripts/break/sceneSwitcher.js"></script>
+<script src="scripts/break/infoBar.js"></script>
+<script src="scripts/break/casters.js"></script>
+<script src="scripts/break/teams.js"></script>
+<script src="scripts/break/stages.js"></script>
+<script src="scripts/break/mainInfoSwitcher.js"></script>
+<script src="scripts/break/logoAnimation.js"></script>
+
+</body>
+</html>

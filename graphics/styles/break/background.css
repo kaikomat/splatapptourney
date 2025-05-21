@@ -1,0 +1,36 @@
+.wave-svg {
+    width: 1920px;
+    height: 2160px;
+    position: absolute;
+    bottom: -400px;
+    left: 0;
+
+    filter: drop-shadow(0 -15px 0 var(--background-1-light));
+}
+
+div.background-wrapper {
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.wave-wrapper {
+    height: 2160px;
+    z-index: 5;
+}
+
+div.coral-wrapper {
+    height: 1080px;
+    background: url("../../imgs/coraltile.png"),
+                var(--background-2-mid);
+    z-index: 1;
+    background-position: 0 900px;
+}
+
+.bottom-coral-wrapper {
+    height: 1080px;
+    z-index: 5;
+    display: flex;
+    align-items: flex-end;
+}

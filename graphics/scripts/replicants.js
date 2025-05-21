@@ -1,0 +1,12 @@
+const activeRound = nodecg.Replicant('activeRound', DASHBOARD_BUNDLE_NAME);
+const activeBreakScene = nodecg.Replicant('activeBreakScene', DASHBOARD_BUNDLE_NAME);
+const casters = nodecg.Replicant('casters', DASHBOARD_BUNDLE_NAME);
+const mainFlavorText = nodecg.Replicant('mainFlavorText', DASHBOARD_BUNDLE_NAME);
+const nowPlaying = nodecg.Replicant('nowPlaying', DASHBOARD_BUNDLE_NAME);
+const musicShown = nodecg.Replicant('musicShown', DASHBOARD_BUNDLE_NAME);
+const nextRoundTime = nodecg.Replicant('nextRoundStartTime', DASHBOARD_BUNDLE_NAME);
+const rounds = nodecg.Replicant('rounds', DASHBOARD_BUNDLE_NAME);
+const gameWinners = nodecg.Replicant('gameWinners', DASHBOARD_BUNDLE_NAME);
+const scoreboardData = nodecg.Replicant('scoreboardData', DASHBOARD_BUNDLE_NAME);
+const nextTeams = nodecg.Replicant('nextTeams', DASHBOARD_BUNDLE_NAME);
+const assetPaths = nodecg.Replicant('assetPaths', DASHBOARD_BUNDLE_NAME);
