@@ -1,0 +1,37 @@
+{
+    "name": "reef-rushdown-overlays",
+    "version": "2.0.0",
+    "compatibleDashboardVersion": "^4.4.0",
+    "compatibleGameVersions": ["SPLATOON_2", "SPLATOON_3"],
+    "description": "Broadcast overlays for Reef Rushdown, a Splatoon tournament.",
+    "author": {
+        "name": "Inkling Performance Labs",
+        "url": "https://iplabs.ink"
+    },
+    "nodecg": {
+        "compatibleRange": "^1.7.0 || ^2.0.0",
+        "graphics": [
+            {
+                "file": "main.html",
+                "width": 1920,
+                "height": 1080
+            },
+            {
+                "file": "break.html",
+                "width": 1920,
+                "height": 1080
+            }
+        ]
+    },
+    "dependencies": {
+        "fitted-text": "2.0.5",
+        "gsap": "^3.11.3",
+        "lodash": "^4.17.21",
+        "luxon": "^1.26.0",
+        "pixi.js": "^6.0.0",
+        "wavify": "^1.0.0"
+    },
+    "devDependencies": {
+        "ts-nodecg": "^0.3.1"
+    }
+}
