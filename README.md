@@ -1,4 +1,4 @@
-# reef-rushdown-overlays
+# splatapp tourney ui
 
 A [NodeCG](http://github.com/nodecg/nodecg) bundle, used for the Reef Rushdown Splatoon tournament, hosted by [Inkling Performance Labs.](https://iplabs.ink/)
 
