@@ -1,68 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--suppress ALL -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>main@reef-rushdown-overlays</title>
+	<head>
+		<meta charset="UTF-8" />
+		<title>main@splatapptourney</title>
 
-    <!--
+		<!--
        Rock Salt
        Raleway 500, 600, 700
        Montserrat 700 (numbers)
        Kosugi Maru (Japanese text)
        Font Awesome
    -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/6346e13f8b.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/6346e13f8b.js"
+			crossorigin="anonymous"
+		></script>
 
-    <link rel="stylesheet" href="styles/globals.css">
-    <link rel="stylesheet" href="styles/main/main.css">
-    <link rel="stylesheet" href="styles/main/scoreboard.css">
-    <link rel="stylesheet" href="styles/main/casters.css">
-</head>
-<body>
-    <div class="scoreboard-wrapper" id="scoreboard-wrapper">
-        <div class="scoreboard">
-            <fitted-text id="team-a-name" class="team-name" text="Team A" max-width="200"></fitted-text>
-            <fitted-text id="team-a-score" class="team-score" text="1" max-width="35" align="center"></fitted-text>
-            <div id="team-a-color" class="team-color"></div>
+		<link rel="stylesheet" href="styles/globals.css" />
+		<link rel="stylesheet" href="styles/main/main.css" />
+		<link rel="stylesheet" href="styles/main/scoreboard.css" />
+		<link rel="stylesheet" href="styles/main/casters.css" />
+	</head>
+	<body>
+		<div class="scoreboard-wrapper" id="scoreboard-wrapper">
+			<div class="scoreboard">
+				<fitted-text
+					id="team-a-name"
+					class="team-name"
+					text="Team A"
+					max-width="200"
+				></fitted-text>
+				<fitted-text
+					id="team-a-score"
+					class="team-score"
+					text="1"
+					max-width="35"
+					align="center"
+				></fitted-text>
+				<div id="team-a-color" class="team-color"></div>
 
-            <div class="line"></div>
+				<div class="line"></div>
 
-            <fitted-text id="team-b-name" class="team-name" text="Team B" max-width="200"></fitted-text>
-            <fitted-text id="team-b-score" class="team-score" text="999" max-width="35" align="center"></fitted-text>
-            <div id="team-b-color" class="team-color"></div>
-        </div>
+				<fitted-text
+					id="team-b-name"
+					class="team-name"
+					text="Team B"
+					max-width="200"
+				></fitted-text>
+				<fitted-text
+					id="team-b-score"
+					class="team-score"
+					text="999"
+					max-width="35"
+					align="center"
+				></fitted-text>
+				<div id="team-b-color" class="team-color"></div>
+			</div>
 
-        <div class="flavor-text">
-            <fitted-text id="scoreboard-flavor-text" max-width="260"></fitted-text>
-        </div>
+			<div class="flavor-text">
+				<fitted-text id="scoreboard-flavor-text" max-width="260"></fitted-text>
+			</div>
 
-        <img class="scoreboard-decoration scoreboard-coral" src="imgs/coral.svg">
-        <img class="scoreboard-decoration scoreboard-shell" src="imgs/shell.svg">
-    </div>
+			<img
+				class="scoreboard-decoration scoreboard-coral"
+				src="imgs/coral.svg"
+			/>
+			<img
+				class="scoreboard-decoration scoreboard-shell"
+				src="imgs/shell.svg"
+			/>
+		</div>
 
-    <div class="casters-wrapper" id="casters-wrapper">
-        <div class="casters">
-            <div class="title">Commentators</div>
-            <div id="caster-elements">
+		<div class="casters-wrapper" id="casters-wrapper">
+			<div class="casters">
+				<div class="title">Commentators</div>
+				<div id="caster-elements"></div>
+			</div>
+		</div>
 
-            </div>
-        </div>
-    </div>
+		<script src="../node_modules/lodash/lodash.min.js"></script>
+		<script src="../node_modules/fitted-text/dist/fitted-text.js"></script>
+		<script src="../node_modules/gsap/dist/gsap.js"></script>
 
-    <script src="../node_modules/lodash/lodash.min.js"></script>
-    <script src="../node_modules/fitted-text/dist/fitted-text.js"></script>
-    <script src="../node_modules/gsap/dist/gsap.js"></script>
+		<script src="scripts/globals.js"></script>
+		<script src="scripts/replicants.js"></script>
 
-    <script src="scripts/globals.js"></script>
-    <script src="scripts/replicants.js"></script>
-
-    <script src="scripts/main/scoreboard.js"></script>
-    <script src="scripts/main/casters.js"></script>
-</body>
+		<script src="scripts/main/scoreboard.js"></script>
+		<script src="scripts/main/casters.js"></script>
+	</body>
 </html>
