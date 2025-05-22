@@ -1,25 +1,41 @@
 :root {
-    --background-1-light: #BCF0D5;
-    --background-1-dark: #2494A7;
+	--background-1-light: #bcf0d5;
+	--background-1-dark: #2494a7;
 
-    --background-2-light: #F4A590;
-    --background-2-mid: #8D2F2A;
-    --background-2-dark: #7E2A26;
+	--background-2-light: #f4a590;
+	--background-2-mid: #8d2f2a;
+	--background-2-dark: #7e2a26;
 
-    --scoreboard-background: rgba(228, 228, 228, 0.8);
+	--scoreboard-background: rgba(228, 228, 228, 0.8);
+
+	--sa-gold: #ffba11;
+	--sa-brown: #a2715d;
+	--sa-purple: #7636f9;
+	--sa-blue: #1a22f7;
+	--sa-red: #ff524f;
+	--sa-white: #fffde7;
 }
 
+@font-face {
+	font-family: "SplatoonAlterna", sans-serif;
+	src: url("graphics/fonts/SplatoonAlternaFinal.otf") format("opentype");
+}
+
+/* body {
+	font-family: "Raleway", "Kosugi Maru", sans-serif;
+	font-weight: 500;
+} */
+
 body {
-    font-family: 'Raleway', 'Kosugi Maru', sans-serif;
-    font-weight: 500;
+	font-family: "SplatoonAlterna";
 }
 
 .flex-align-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .rr-logo-font {
-    font-family: 'Rock Salt', sans-serif;
+	font-family: "SplatoonAlterna";
 }
