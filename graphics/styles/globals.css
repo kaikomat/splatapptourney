@@ -1,5 +1,5 @@
 :root {
-	--background-1-light: #bcf0d5;
+	--background-1-light: rgba(102, 99, 102, 0.6);
 	--background-1-dark: #2494a7;
 
 	--background-2-light: #f4a590;
@@ -8,18 +8,43 @@
 
 	--scoreboard-background: rgba(228, 228, 228, 0.8);
 
+	--grey-light: #616161;
+	--grey-med: #3c3c3c;
+	--grey-dark: #1d1c1c;
+
 	--sa-gold: #ffba11;
 	--sa-brown: #a2715d;
+
+	--sa-purple-light: #a77dfa;
 	--sa-purple: #7636f9;
+	--sa-purple-dark: #493269;
+
+	--sa-blue-light: #8286ff;
+	--sa-blue-light-transparent: rgba(130, 134, 255, 0.5);
 	--sa-blue: #1a22f7;
+	--sa-blue-dark: #242880;
+
+	--sa-red-light: #ff8987;
 	--sa-red: #ff524f;
+	--sa-red-dark: #bf3836;
+
 	--sa-white: #fffde7;
+
+	--bgGradient: linear-gradient(
+		90deg,
+		rgba(179, 104, 170, 1) 0%,
+		rgba(212, 105, 129, 1) 34%,
+		rgba(183, 131, 130, 1) 65%,
+		rgba(255, 211, 110, 1) 100%
+	);
 }
 
 @font-face {
-	font-family: "SplatoonAlterna", sans-serif;
-	src: url("graphics/fonts/SplatoonAlternaFinal.otf") format("opentype");
+	font-family: "SplatoonAlterna", "Raleway", sans-serif;
+	src: url("../fonts/SplatoonAlternaFinal.otf") format("opentype");
 }
+
+/* https://www.fontbolt.com/font/splatoon-font/ */
 
 /* body {
 	font-family: "Raleway", "Kosugi Maru", sans-serif;
@@ -36,6 +61,6 @@ body {
 	justify-content: center;
 }
 
-.rr-logo-font {
+.splatapp-logo-font {
 	font-family: "SplatoonAlterna";
 }

@@ -6,10 +6,10 @@
 		"SPLATOON_2",
 		"SPLATOON_3"
 	],
-	"description": "Broadcast overlays for Reef Rushdown, a Splatoon tournament.",
+	"description": "Broadcast overlays for SplatApp",
 	"author": {
-		"name": "Inkling Performance Labs",
-		"url": "https://iplabs.ink"
+		"name": "SplatApp",
+		"url": "https://app.splatapp.ink"
 	},
 	"nodecg": {
 		"compatibleRange": "^1.7.0 || ^2.0.0",

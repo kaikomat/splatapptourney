@@ -55,25 +55,41 @@
 	position: absolute;
 	z-index: 2;
 	border-radius: 10px;
+	border: 1px dotted var(--sa-blue);
+	border-top: none;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-image {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-image {
 	height: 420px;
 	width: 100%;
-
+	z-index: 4;
 	position: absolute;
 
 	background-position: center center;
 	background-size: cover;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text {
 	height: 600px;
 	width: 100%;
 	position: absolute;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text > .stage-winner-wrapper > .stage-winner {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-winner-wrapper
+	> .stage-winner {
 	color: white;
 	text-align: right;
 	position: relative;
@@ -82,7 +98,12 @@
 	overflow-wrap: anywhere;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text > .stage-winner-wrapper {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-winner-wrapper {
 	height: 500px;
 	width: 100%;
 	position: absolute;
@@ -92,59 +113,130 @@
 	background: linear-gradient(180deg, #222 0%, transparent 50%);
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text > .stage-info {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info {
 	position: absolute;
 	bottom: 0;
-	color: var(--background-2-dark);
+	color: var(--sa-blue-dark);
 	padding: 10px;
 	width: calc(100% - 20px);
-	background-color: var(--background-1-light);
+	background-color: var(--sa-blue-light-transparent);
 	height: 165px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text > .stage-info > .stage-mode {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-mode {
 	margin-bottom: 5px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-3 > .stage > .stage-content > .stage-text > .stage-info > .stage-mode,
-.scene-wrapper.stages-scene > .stages-grid.stage-count-3 > .stage > .stage-content > .stage-text > .stage-winner-wrapper > .stage-winner {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-3
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-mode,
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-3
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-winner-wrapper
+	> .stage-winner {
 	font-size: 37px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-5 > .stage > .stage-content > .stage-text > .stage-info > .stage-mode,
-.scene-wrapper.stages-scene > .stages-grid.stage-count-5 > .stage > .stage-content > .stage-text > .stage-winner-wrapper > .stage-winner {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-5
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-mode,
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-5
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-winner-wrapper
+	> .stage-winner {
 	font-size: 35px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-7 > .stage > .stage-content > .stage-text > .stage-info > .stage-mode,
-.scene-wrapper.stages-scene > .stages-grid.stage-count-7 > .stage > .stage-content > .stage-text > .stage-winner-wrapper > .stage-winner {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-7
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-mode,
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-7
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-winner-wrapper
+	> .stage-winner {
 	font-size: 31px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid > .stage > .stage-content > .stage-text > .stage-info > .stage-name {
+.scene-wrapper.stages-scene
+	> .stages-grid
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-name {
 	font-weight: 700;
 	justify-self: center;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-3 > .stage > .stage-content > .stage-text > .stage-info > .stage-name {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-3
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-name {
 	font-size: 40px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-5 > .stage > .stage-content > .stage-text > .stage-info > .stage-name {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-5
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-name {
 	font-size: 38px;
 }
 
-.scene-wrapper.stages-scene > .stages-grid.stage-count-7 > .stage > .stage-content > .stage-text > .stage-info > .stage-name {
+.scene-wrapper.stages-scene
+	> .stages-grid.stage-count-7
+	> .stage
+	> .stage-content
+	> .stage-text
+	> .stage-info
+	> .stage-name {
 	font-size: 34px;
 }
 
 .scene-wrapper.stages-scene > .stages-scoreboard {
 	height: 65px;
 	width: 1000px;
-	background-color: var(--background-1-light);
+	background-color: var(--sa-blue-light-transparent);
 	position: absolute;
 	top: 125px;
 	border-radius: 12px;
@@ -155,7 +247,7 @@
 }
 
 .scene-wrapper.stages-scene > .stages-scoreboard > .scores {
-	background-color: var(--background-2-dark);
+	background-color: var(--sa-blue-light);
 	width: 100%;
 	height: 100%;
 	display: grid;
@@ -170,14 +262,14 @@
 .scene-wrapper.stages-scene > .stages-scoreboard > .scores > fitted-text {
 	margin-top: 4px;
 	font-family: Montserrat, sans-serif;
-	color: var(--background-2-light);
+	color: var(--sa-gold);
 }
 
 .scene-wrapper.stages-scene > .stages-scoreboard > fitted-text {
 	margin: 0 10px;
 	font-size: 35px;
 	font-weight: 600;
-	color: var(--background-2-dark);
+	color: var(--sa-blue-dark);
 }
 
 #team-a-name-scoreboard {

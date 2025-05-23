@@ -56,7 +56,7 @@
 					<fitted-text
 						class="main-flavor-text"
 						id="main-flavor-text"
-						text="Welcome to Reef Rushdown!"
+						text="Welcome to SplatApp!"
 						max-width="1800"
 					></fitted-text>
 					<div class="line"></div>
@@ -84,19 +84,19 @@
 					<div class="line"></div>
 					<div class="support-row">
 						<i class="fab fa-twitter"></i>
-						<span>@IPLSplatoon</span>
+						<span>@AppSplat</span>
 					</div>
-					<div class="support-row">
+					<!-- <div class="support-row">
 						<i class="fab fa-discord"></i>
 						<span>IPLabs.ink/discord</span>
 					</div>
 					<div class="support-row">
 						<i class="fab fa-patreon"></i>
 						<span>patreon.com/IPLSplatoon</span>
-					</div>
+					</div> -->
 					<div class="support-row">
 						<i class="fas fa-globe"></i>
-						<span>IPLabs.ink</span>
+						<span>app.splatapp.ink</span>
 					</div>
 				</div>
 			</div>
@@ -105,7 +105,7 @@
 		<div class="scene-wrapper teams-scene flex-align-center">
 			<div class="scene-content">
 				<div class="team flex-align-center" id="team-a-wrapper">
-					<img class="team-decor-icon team-a-decor-icon" src="imgs/coral.svg" />
+					<img class="team-decor-icon team-a-decor-icon" src="imgs/snake.svg" />
 					<div class="background"></div>
 					<div class="content-wrapper flex-align-center">
 						<div class="content first-team-content">
@@ -179,7 +179,7 @@
 			<div class="info-bar flex-align-center">
 				<div class="info-row info-row-welcome flex-align-center">
 					Welcome to<span class="small-logo"><img src="imgs/rrlogo.png" /></span
-					><span class="rr-logo-font">Reef Rushdown!</span>
+					><span class="splatapp-logo-font">SplatApp!</span>
 				</div>
 				<div class="info-row info-row-commentators flex-align-center">
 					<div class="commentators flex-align-center">
@@ -212,8 +212,17 @@
 
 		<div class="background-wrapper coral-wrapper"></div>
 
+		<!-- Animated SVG -->
 		<div class="background-wrapper wave-wrapper">
 			<svg class="wave-svg" viewBox="0 -600 1920 2160">
+				<defs>
+					<lineargradient id="centerGradient">
+						<stop offset="10%" stop-color="#B368AA" />
+						<stop offset="45%" stop-color="#D46981" />
+						<stop offset="65%" stop-color="#B78382" />
+						<stop offset="100%" stop-color="#FFD36E" />
+					</lineargradient>
+				</defs>
 				<path id="wave-path" d=""></path>
 			</svg>
 		</div>
